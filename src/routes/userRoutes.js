@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 const controller = require("../Controllers/userControllers");
-const authController = require("../controllers/authControllers");
+const authController = require("../Controllers/authControllers");
 const postController = require("../Controllers/postControllers");
 
 router.get("/", controller.getAll); //lista os usuários
