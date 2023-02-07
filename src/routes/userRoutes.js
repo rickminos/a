@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
 
-const controller = require("../controllers/userControllers");
-const authController = require("../controllers/authControllers");
-const postController = require("../Controllers/postControllers");
+const controller = require("src/controllers/userControllers");
+const authController = require("src/controllers/authControllers");
+const postController = require("src/Controllers/postControllers");
 
 router.get("/", controller.getAll); //lista os usuários
 router.post("/", controller.createUser); //cria novo usuário
